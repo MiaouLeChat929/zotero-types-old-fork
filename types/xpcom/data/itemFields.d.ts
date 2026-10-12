@@ -134,8 +134,12 @@ declare namespace Zotero {
     /** Whether the field stores an integer. */
     function isInteger(fieldID: number | string): boolean;
 
-    /** Whether the field is a long-form text field. */
-    function isLong(field: number | string): boolean;
+    /**
+     * Whether the field is a long-form text field.
+     * Runtime signature: no required args (introspection reports arity 0;
+     * the parameter is optional in the IDL).
+     */
+    function isLong(field?: number | string): boolean;
 
     /** Whether the field accepts multiline input. */
     function isMultiline(field: number | string): boolean;
